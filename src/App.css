@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the page takes up the full viewport height */
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Set a base font size */
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 2rem; /* Reduce the top margin for better spacing */
+  padding: 2rem;
+  border-radius: 10px; /* Increase border radius for smoother corners */
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Add a maximum width to prevent excessive stretching */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #fff; /* Use a white background for input */
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Keep consistent margin bottom */
+  width: 100%; /* Adjust the width to fill the parent container */
+  color: #333; /* Darken text color for better readability */
+  border-radius: 5px; /* Add some corner radius */
+  transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.todo-input::placeholder {
+  color: #555; /* Adjust placeholder color for contrast */
+}
+
+.todo-input:focus {
+  border-color: #8758ff; /* Highlight the input on focus */
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  border-radius: 5px; /* Add some corner radius */
+  transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.todo-btn:hover {
+  background: #6746d1; /* Change background color on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.Todo:hover {
+  background: #6746d1; /* Change background color on hover */
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
